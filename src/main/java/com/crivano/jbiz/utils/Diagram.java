@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import com.crivano.jbiz.IAction;
-import com.crivano.jbiz.IChange;
+import com.crivano.jbiz.IEvent;
 import com.crivano.jbiz.IPersistent;
 
 public class Diagram {
@@ -346,14 +346,14 @@ public class Diagram {
 		for (Element e : l.values()) {
 			boolean persistent = IPersistent.class.isAssignableFrom(e.clazz);
 			boolean enumerable = Enum.class.isAssignableFrom(e.clazz);
-			boolean change = IChange.class.isAssignableFrom(e.clazz);
+			boolean event = IEvent.class.isAssignableFrom(e.clazz);
 			boolean action = IAction.class.isAssignableFrom(e.clazz);
 			String fillColor = "#FFFFFF";
 			if (persistent)
 				fillColor = "#D0FFD0";
 			else if (enumerable)
 				fillColor = "#D0D0FF";
-			else if (change)
+			else if (event)
 				fillColor = "#FFD0FF";
 			else if (action)
 				fillColor = "#FFD0FF";
