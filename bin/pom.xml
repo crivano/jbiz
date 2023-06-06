@@ -4,7 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.crivano</groupId>
 	<artifactId>jbiz</artifactId>
-	<version>VUEJS2-0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -22,7 +29,7 @@
 		<dependency>
 			<groupId>com.crivano</groupId>
 			<artifactId>jlogic</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
