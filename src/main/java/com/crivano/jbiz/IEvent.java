@@ -2,7 +2,7 @@ package com.crivano.jbiz;
 
 import java.util.Date;
 
-public interface IEvent<E extends IEntity> {
+public interface IEvent {
 
 	public abstract IActor getActor();
 

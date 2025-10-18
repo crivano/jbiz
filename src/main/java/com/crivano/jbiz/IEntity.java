@@ -8,7 +8,7 @@ public interface IEntity extends IItem {
 
 	void setBegin(Date dt);
 
-	SortedSet<? extends IEvent<?>> getEvent();
+	SortedSet<? extends IEvent> getEvent();
 
 	// SortedSet<IAction> getActions();
 }
